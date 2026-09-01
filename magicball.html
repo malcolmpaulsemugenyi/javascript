@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="magicball"></div>
+   <div id="tree"></div>
+   <div id="goose"></div>
+   <script>
+    let ballheight = 100
+    setInterval(showadventure, 5000)
+    function showadventure(){
+    document.getElementById("magicball").style.backgroundColor="blue"
+    document.getElementById("magicball").style.height=ballheight+"px"
+    document.getElementById("magicball").style.width=ballheight+"px"
+    document.getElementById("magicball").style.borderRadius="50%"
+    document.getElementById("magicball").style.margin="auto"
+    ballheight=ballheight + 100   
+    }
+    let tree = 500
+    setInterval(showapple, 5000)
+    function showapple(){
+    document.getElementById("tree").style.backgroundColor="pink"
+    document.getElementById("tree").style.height=tree+"px"
+    document.getElementById("tree").style.width=tree+"px"
+    document.getElementById("tree").style.borderRadius="50%"
+    document.getElementById("tree").style.margin="auto"
+    tree=tree + 500   
+    }
+    let goose = 300
+    setInterval(showclock, 3000)
+    function showclock(){
+    document.getElementById("goose").style.backgroundColor="yellow"
+    document.getElementById("goose").style.height=goose+"px"
+    document.getElementById("goose").style.width=goose+"px"
+    document.getElementById("goose").style.borderRadius="50%"
+    document.getElementById("goose").style.margin="auto"
+    goose=goose + 300    
+    }
+   </script>
+</body>
+</html>

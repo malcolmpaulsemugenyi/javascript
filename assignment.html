@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+    <div class="eagle2">
+        <img id="moon" src="Maly Pic.jpeg" width="100px" height="100px">
+        <img id="leaf" src="ball.jfif" width="100px" height="100px">
+        <script>
+        let space = 0    
+        setInterval(showsofa, 1000)
+        function showsofa(){
+        document.getElementById("leaf").style.marginLeft=space+"px"
+        space = space + 10
+        console.log(space)   
+        }
+        let leaf = 0
+        setInterval(showplant, 500)
+        function showplant(){
+        document.getElementById("moon").style.marginTop=leaf+"px"
+        leaf = leaf + 10
+        console.log(leaf)    
+        }      
+        </script>
+    </div>
+</body>
+
+</html>

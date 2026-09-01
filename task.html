@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="yummy">my name is malcolm</p>
+    <p id="ace">i like going to school</p>
+    <button onclick="shirt()">click here to change</button>
+    <button onclick="eggs()">click here to change</button>
+    <button onclick="school()">click here to change</button>
+    <button onclick="trip()"id="eyes">click here to change</button>
+    <button onclick="city()">click here to change</button>
+    <script>
+        function shirt(){
+          document.getElementById("ace").innerHTML= "my name is not malcolm it is matthew rutaya"
+          document.getElementById("ace").style.color="gold"  
+        }
+        function eggs(){
+          document.getElementById("yummy").innerHTML="i like eating eggs"
+          document.getElementById("yummy").style.color= "red" 
+        }
+        function school(){
+          document.getElementById("ace").innerHTML="i went to shoma"
+          document.getElementById("ace").style.color="blue"  
+        }
+        function trip(){
+          document.getElementById("eyes").style.backgroundColor="red"  
+        }
+        function city(){
+          document.getElementById("ace").innerHTML ="i went to kampala"  
+        } 
+    </script>
+</body>
+</html>

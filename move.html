@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="move.css">
+</head>
+
+<body>
+    <div class="bigdiv">
+        <div class="eagle2" id="file"></div>
+        <div class="p1" id="leaf"></div>
+        <div class="p2" id="table"></div>
+        <div class="p3" id="malcolm"></div>
+    </div>
+    <button onclick="malcolm()">down</button>
+    <button onclick="leaf()">right</button>
+    <button onclick="tree()">move</button>
+    <button onclick="friday()">down</button>
+    <script>
+        function malcolm() {
+            let r = 6
+            let x = setInterval(showtree, 600)
+            function showtree() {
+                r = r + 2
+                console.log(r)
+                document.getElementById("file").style.top = r + "px"
+                if (r == 450) {
+                    clearInterval(x, showtree)
+                }
+            }
+            console.log("malcolm has clicked this button")
+        }
+        function leaf() {
+            let f = 7
+            let b = setInterval(showbrick, 100)
+            function showbrick() {
+                console.log(f)
+                document.getElementById("leaf").style.left = f + "px"
+                if (f == 550) {
+                    clearInterval(b, showbrick)
+                }
+                f = f + 1
+            }
+        }
+        function tree() {
+            let l = 4
+            let n = setInterval(showlake, 300)
+            function showlake() {
+                console.log(l)
+                document.getElementById("table").style.top = l + "px"
+                document.getElementById("table").style.left = l + "px"
+                l = l + 1
+                if (l == 403) {
+                    clearInterval(n, showlake)
+                }
+            }
+        }
+        function friday() {
+            let m = 8
+            let g = setInterval(showroot, 300)
+            function showroot() {
+                console.log(m)
+                document.getElementById("malcolm").style.top = m + "px"
+                m = m + 1
+                if (m == 300) {
+                    clearInterval(g, showroot)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

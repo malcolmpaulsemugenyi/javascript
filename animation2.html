@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+   <div class="eagle2">
+    <div class="p1" id="pink"></div>
+    <div class="p2" id="purple"></div>
+    <div class="p3" id="yellow"></div>
+    <div class="p4" id="orange"><img src="Maly Pic.jpeg" width="17px" height="17px"></div>
+   </div> 
+
+   <script>
+    let small = 5
+    setInterval(showher, 500)
+    function showher(){
+    document.getElementById("pink").style.top=small+"px"    
+    small = small + 10 
+    console.log(small)   
+    }
+    let big = 2
+    setInterval(showsun, 100)
+    function showsun(){
+    document.getElementById("purple").style.top=big+"px"
+    big = big + 8
+    console.log("big")  
+    }
+    let medium = 4
+    setInterval(showtoe, 100)
+    function showtoe(){
+    document.getElementById("yellow").style.top=medium+"px"
+    medium = medium + 15
+    console.log("medium")    
+    }
+    let size = 3
+    setInterval(showicing, 500)
+    function showicing(){
+    document.getElementById("orange").style.top=size+"px"
+    size = size + 3
+    console.log("size")    
+    }
+   </script>
+</body>
+</html>

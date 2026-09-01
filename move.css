@@ -1,0 +1,35 @@
+.bigdiv{
+ width: 600px;
+ height: 500px;
+ background-color: blue;
+ position: relative;
+ margin: auto;   
+}
+.eagle2{
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 100px;
+}
+.p1{
+ width: 50px;
+ height: 50px;
+ background-color: purple;
+ position: absolute;
+ margin-left: 150px;   
+}
+.p2{
+ width: 50px;
+ height: 50px;
+ background-color: orange;
+ position: absolute;
+ margin-left: 150px;   
+}
+.p3{
+ width: 50px;
+ height: 50px;
+ background-color: green;
+ position: absolute;
+ margin-left: 150px;   
+}

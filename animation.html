@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 style="color: blue;">this is my moving car</h1>
+<img id="car" src="subaru.jfif" width="200px" height="100px" >
+<img id="eagle" src="eagle.jfif" width="200px" height="100px">
+<script>
+let left = 0    
+setInterval(mymalcolm, 500)
+function mymalcolm(){
+document.getElementById("car").style.marginLeft = left+"px"   
+console.log("how are you?")
+left = left+ 10
+console.log(left)    
+}
+let right = 0
+setInterval(myschool, 300)
+function myschool(){
+document.getElementById("eagle").style.backgroundColor="blue"
+document.getElementById("eagle").style.marginLeft = right+"px"
+console.log("how are you?")
+right = right+ 10
+console.log(right)
+}  
+</script>
+</body>
+</html>
