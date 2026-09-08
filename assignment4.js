@@ -46,22 +46,22 @@ function addtwonumbers(a, e){
 }
 
 addtwonumbers(6, 3)
-function subtract(u, v){
-    console.log("u - v")
+function subtracttwonumbers(u, v){
+    console.log(u - v)
 }
 
-subtracttwonumbers(5, 8)
-function multiply(m, t){
-    console.log("m * t")
+subtracttwonumbers(8, 7)
+function multiplytwonumbers(m, t){
+    console.log(m * t)
 }
 
 multiplytwonumbers(6, 4)
-function divide(m, n){
+function dividetwonumbers(m, n){
     console.log(m / n)
 }
 
 dividetwonumbers(3, 1)
-function square(l, b){
+function squaretwonumbers(l, b){
     console.log(l / b)
 }
 
